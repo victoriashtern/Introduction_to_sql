@@ -18,7 +18,7 @@ Databases can be simple or very complex, containing many tables that store diffe
 
 Databases are also useful for research and exploring topics of interest. They allow users to search for specific information, making large amounts of information easier to find, organize, and access.
 
-- [SQL Documentation](/sql//sql_language.md)
+- [SQL Documentation](/sql/)
 - [Data Types](ddata_types.md)
 
 
