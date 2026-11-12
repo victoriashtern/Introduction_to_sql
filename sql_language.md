@@ -18,17 +18,19 @@ SQL is used to:
 
 ---
 
+[Data Types](ddata_types.md)
+
 ## 2\. Types of SQL Languages
 
 SQL commands are divided into five main categories:
 
 | Category | Full Form | Purpose | Common Commands |
 | --- | --- | --- | --- |
-| DDL | Data Definition Language | Defines and manages database structures. | CREATE, ALTER, DROP, TRUNCATE |
-| DML | Data Manipulation Language | Adds, modifies, and deletes table records. | INSERT, UPDATE, DELETE |
-| DQL | Data Query Language | Retrieves information from database tables. | SELECT |
-| DCL | Data Control Language | Manages database access and permissions. | GRANT, REVOKE |
-| TCL | Transaction Control Language | Manages database transactions. | COMMIT, ROLLBACK, SAVEPOINT |
+| [DDL – Data Definition Language Commands](ddl_commands.md) | Data Definition Language | Defines and manages database structures. | CREATE, ALTER, DROP, TRUNCATE |
+| [DML – Data Manipulation Language Commands](dml_commannds.md) | Data Manipulation Language | Adds, modifies, and deletes table records. | INSERT, UPDATE, DELETE |
+| [DQL – Data Query Language Commands](dql-commands.md) | Data Query Language | Retrieves information from database tables. | SELECT |
+| [DCL-Data Control Language](dcl_commands.md) | Data Control Language | Manages database access and permissions. | GRANT, REVOKE |
+| [TCL – Transaction Control Language Commands](tcl_commands.md) | Transaction Control Language | Manages database transactions. | COMMIT, ROLLBACK, SAVEPOINT |
 
 ---
 
