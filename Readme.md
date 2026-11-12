@@ -1,6 +1,6 @@
 
 
-# Introduction to Databases and Relational Databases
+# Introduction to Databases
 
 ## 1\. What is a Database?
 
