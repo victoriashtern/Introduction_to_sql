@@ -111,5 +111,3 @@ LIMIT 5;
 - `LIMIT` restricts the number of returned records.
 
 ---
-
-**End of DQL Commands Reference Guide**
