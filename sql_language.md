@@ -18,8 +18,6 @@ SQL is used to:
 
 ---
 
-[Data Types](ddata_types.md)
-
 ## 2\. Types of SQL Languages
 
 SQL commands are divided into five main categories:
