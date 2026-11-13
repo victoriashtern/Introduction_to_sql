@@ -123,6 +123,9 @@ After installation, you will be prompted to configure MySQL Server.
  ![MySQL Setup Type](/installation/img/product_configuration.png)
 11. Validate connection to Server
   ![MySQL Setup Type](/installation/img/connect_to_server.png)
+12.Apply Server COnfiguration
+  ![MySQL Setup Type](/installation/img/apply_server_configuration.png)
+
 
 
 
