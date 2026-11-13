@@ -91,6 +91,7 @@ After installation, you will be prompted to configure MySQL Server.
   ![MySQL Setup Type](/installation/img/authentification.png)
  
 9. Create a password for the MySQL root account.
+    ![MySQL Setup Type](/installation/img/accounts_roles_password.png)
 
 **Important:** Remember your root password. You will need it when connecting to your MySQL database.
 
