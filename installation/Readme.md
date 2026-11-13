@@ -60,17 +60,19 @@ Click **Next**.
 
 ## Step 4: Install MySQL Products
 
-1. The installer will check whether your computer has the required software.
-![MySQL Setup Type](/installation/img/product.png)
+1. The installer will check whether your computer has the required software (**In case the Installation existed before**).
+![MySQL Setup Type](/installation/img/validation_of_installed_products.png)
 
 3. If any requirements are missing, click **Execute** to install them.
-   
+   ![MySQL Setup Type](/installation/img/product.png)
 
 
 5. Once the requirements are satisfied, click **Next**.
 6. Click **Execute** to begin installing the selected MySQL products.
-7. Wait until all products show a successful installation status.
-8. Click **Next** to continue.
+  ![MySQL Setup Type](/installation/img/installation_in_process.png)
+
+9. Wait until all products show a successful installation status.
+10. Click **Next** to continue.
 
 ## Step 5: Configure MySQL Server
 
