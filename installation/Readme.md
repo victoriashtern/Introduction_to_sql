@@ -6,8 +6,9 @@
 1. Open the official MySQL download page:
 
    https://dev.mysql.com/downloads/installer/
+   ![MySQL Setup Type](/installation/img/page_installation.png)
 
-2. You will see two installation options:
+3. You will see two installation options:
 
 | Installation file | Description |
 |---|---|
@@ -25,6 +26,7 @@ Both options use the MySQL Installer to guide you through the installation proce
 
 1. Once the download is complete, locate the downloaded .msi file in your **Downloads** folder.
 2. Double-click the file to launch the MySQL Installer.
+   ![MySQL Setup Type](/installation/img/product1.png)
 4. If Windows asks for permission to make changes to your device, click **Yes**.
 6. Wait for the installer to initialize.
 
@@ -55,11 +57,16 @@ Click **Next**.
 ## Step 4: Install MySQL Products
 
 1. The installer will check whether your computer has the required software.
-2. If any requirements are missing, click **Execute** to install them.
-3. Once the requirements are satisfied, click **Next**.
-4. Click **Execute** to begin installing the selected MySQL products.
-5. Wait until all products show a successful installation status.
-6. Click **Next** to continue.
+![MySQL Setup Type](/installation/img/product1.png)
+
+3. If any requirements are missing, click **Execute** to install them.
+   
+![MySQL Setup Type](/installation/img/product2.png)
+
+5. Once the requirements are satisfied, click **Next**.
+6. Click **Execute** to begin installing the selected MySQL products.
+7. Wait until all products show a successful installation status.
+8. Click **Next** to continue.
 
 ## Step 5: Configure MySQL Server
 
