@@ -130,7 +130,7 @@ After installation, you will be prompted to configure MySQL Server.
 14. Finish installation
   ![MySQL Setup Type](/installation/img/finish_installation.png)
 15. **Success**
-  ![MySQL Setup Type](/installation/img/successful.png)
+  ![MySQL Setup Type](/installation/img/successful_installation.png.png)
 
 
 ## Step 7: Verify the Installation
