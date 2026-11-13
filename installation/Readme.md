@@ -28,11 +28,11 @@ Both options use the MySQL Installer to guide you through the installation proce
 3. If Windows asks for permission to make changes to your device, click **Yes**.
 4. Wait for the installer to initialize.
 
-![MySQL Setup Type](images/installer1.png)
 
-![MySQL Installation Progress](images/installation-progress.png)
 
-![MySQL Server Configuration](images/server-configuration.png)
+1. ![MySQL Setup Type](images/installer1.png)
+2. ![MySQL Installation Progress](images/installation-progress.png)
+3. ![MySQL Server Configuration](images/server-configuration.png)
 
 ## Step 3: Choose the Setup Type
 
