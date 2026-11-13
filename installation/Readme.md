@@ -94,17 +94,22 @@ After installation, you will be prompted to configure MySQL Server.
     ![MySQL Setup Type](/installation/img/account_setup.png)
 
 9. Create a new user.
-    ![MySQL Setup Type](/installation/img/new_user.png.png)
+    ![MySQL Setup Type](/installation/img/new_user.png)
 
 **Important:** Remember your root password. You will need it when connecting to your MySQL database.
 
 ## Step 6: Complete the Configuration
 
 1. Configure MySQL to run as a Windows service.
-2. Keep the option to start MySQL Server when Windows starts enabled.
-3. Click **Execute** to apply the configuration.
-4. Wait until all configuration steps are completed successfully.
-5. Click **Finish**.
+3. Keep the option to start MySQL Server when Windows starts enabled.
+ ![MySQL Setup Type](/installation/img/windows_service.png)
+
+![MySQL Setup Type](/installation/img/file_permission.png)
+
+5. Click **Execute** to apply the configuration.
+![MySQL Setup Type](/installation/img/apply_configuration.png)
+7. Wait until all configuration steps are completed successfully.
+8. Click **Finish**.
 
 ## Step 7: Verify the Installation
 
