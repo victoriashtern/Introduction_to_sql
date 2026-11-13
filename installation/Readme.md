@@ -25,14 +25,11 @@ Both options use the MySQL Installer to guide you through the installation proce
 
 1. Once the download is complete, locate the downloaded .msi file in your **Downloads** folder.
 2. Double-click the file to launch the MySQL Installer.
-3. If Windows asks for permission to make changes to your device, click **Yes**.
-4. Wait for the installer to initialize.
+4. If Windows asks for permission to make changes to your device, click **Yes**.
+6. Wait for the installer to initialize.
 
 
 
-1. ![MySQL Setup Type](installation/img/win_installer1.png)
-2. ![MySQL Installation Progress](images/installation-progress.png)
-3. ![MySQL Server Configuration](images/server-configuration.png)
 
 ## Step 3: Choose the Setup Type
 
@@ -47,6 +44,9 @@ The available options include:
 | Client Only | Installs client applications such as MySQL Workbench, without the server. |
 | Full | Installs all available MySQL products. |
 | Custom | Allows you to select individual MySQL components. |
+
+
+![MySQL Setup Type](/installation/img/win_setup_type.png)
 
 **Recommendation:** Select **Developer Default** if you plan to develop applications or work with databases using MySQL Workbench.
 
