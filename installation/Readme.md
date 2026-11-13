@@ -119,7 +119,10 @@ After installation, you will be prompted to configure MySQL Server.
     - Load balancing: Distributes database connections across servers when supported by the configuration.
     - InnoDB Cluster support: Helps applications connect to MySQL InnoDB Cluster environments.
   ![MySQL Setup Type](/installation/img/ruter_builder.png)
-
+10. Product configuration
+ ![MySQL Setup Type](/installation/img/product_configuration.png)
+11. Validate connection to Server
+  ![MySQL Setup Type](/installation/img/connect_to_server.png)
 
 
 
