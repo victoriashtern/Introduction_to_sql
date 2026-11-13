@@ -80,11 +80,12 @@ Click **Next**.
 After installation, you will be prompted to configure MySQL Server.
 
 1. Select the default configuration options unless you have specific requirements.
-2. Select **Standalone MySQL Server** if prompted.
-3. Configure the server type and connectivity settings.
-4. Keep the default port as 3306, unless another application is already using it.
-5. Select the authentication method. The recommended option is to use strong password encryption.
-6. Create a password for the MySQL root account.
+   ![MySQL Setup Type](/installation/img/product_configuration.png)
+3. Select **Standalone MySQL Server** if prompted.
+4. Configure the server type and connectivity settings.
+5. Keep the default port as 3306, unless another application is already using it.
+6. Select the authentication method. The recommended option is to use strong password encryption.
+7. Create a password for the MySQL root account.
 
 **Important:** Remember your root password. You will need it when connecting to your MySQL database.
 
