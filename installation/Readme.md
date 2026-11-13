@@ -113,6 +113,14 @@ After installation, you will be prompted to configure MySQL Server.
 ![MySQL Setup Type](/installation/img/complete_configuration.png)
 9. Product configuration
  ![MySQL Setup Type](/installation/img/product_configuration.png)
+10. Router Builder -is a lightweight middleware service that sits between your application and MySQL database servers. It directs database connections to the appropriate MySQL server
+    - Connection routing: Directs database connections to the appropriate MySQL server.
+    - High availability: Helps redirect connections when a MySQL server becomes unavailable.
+    - Load balancing: Distributes database connections across servers when supported by the configuration.
+    - InnoDB Cluster support: Helps applications connect to MySQL InnoDB Cluster environments.
+  ![MySQL Setup Type](/installation/img/ruter_builder.png)
+
+
 
 
 ## Step 7: Verify the Installation
