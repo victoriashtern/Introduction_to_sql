@@ -30,7 +30,7 @@ Both options use the MySQL Installer to guide you through the installation proce
 
 
 
-1. ![MySQL Setup Type](images/installer1.png)
+1. ![MySQL Setup Type](installation/img/win_installer1.png)
 2. ![MySQL Installation Progress](images/installation-progress.png)
 3. ![MySQL Server Configuration](images/server-configuration.png)
 
