@@ -142,6 +142,10 @@ To make sure MySQL has been installed correctly:
 3. Locate the local MySQL connection (usually named Local instance MySQL80).
 4. Double-click the connection.
 5. Enter the root password you created during installation.
+![MySQL Setup Type](/installation/img/workbench_set_up_connection.png)
+
+
+
 
 If the connection opens successfully, MySQL is installed and ready to use.
 
