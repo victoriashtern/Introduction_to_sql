@@ -6,16 +6,16 @@
 1. Open the official MySQL download page:
 
    https://dev.mysql.com/downloads/installer/
-   
-   ![MySQL Setup Type](/installation/img/page_installation.png)
-
 3. You will see two installation options:
+
+   ![MySQL Setup Type](/installation/img/page_installation.png)
 
 | Installation file | Description |
 |---|---|
 | mysql-installer-web-community-8.0.46.0.msi | **Web Installer:** A small installation file. An internet connection is required because the necessary MySQL components will be downloaded during installation. |
 | mysql-installer-community-8.0.46.0.msi | **Full Installer:** Includes the installation packages locally. You can install MySQL without downloading the components during setup. |
-![MySQL Setup Type](/installation/img/download.png)
+
+
 
 ### Which one should you download?
 
@@ -27,9 +27,13 @@ Both options use the MySQL Installer to guide you through the installation proce
 ## Step 2: Run the MySQL Installer
 
 1. Once the download is complete, locate the downloaded .msi file in your **Downloads** folder.
-2. Double-click the file to launch the MySQL Installer.
+   
+   ![MySQL Setup Type](/installation/img/download.png)
+   
+3. Double-click the file to launch the MySQL Installer.
    ![MySQL Setup Type](/installation/img/product1.png)
-4. If Windows asks for permission to make changes to your device, click **Yes**.
+   
+5. If Windows asks for permission to make changes to your device, click **Yes**.
 6. Wait for the installer to initialize.
 
 
