@@ -6,6 +6,7 @@
 1. Open the official MySQL download page:
 
    https://dev.mysql.com/downloads/installer/
+   
    ![MySQL Setup Type](/installation/img/page_installation.png)
 
 3. You will see two installation options:
@@ -14,6 +15,7 @@
 |---|---|
 | mysql-installer-web-community-8.0.46.0.msi | **Web Installer:** A small installation file. An internet connection is required because the necessary MySQL components will be downloaded during installation. |
 | mysql-installer-community-8.0.46.0.msi | **Full Installer:** Includes the installation packages locally. You can install MySQL without downloading the components during setup. |
+![MySQL Setup Type](/installation/img/download.png)
 
 ### Which one should you download?
 
