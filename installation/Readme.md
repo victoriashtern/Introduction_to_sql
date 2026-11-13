@@ -31,8 +31,6 @@ Both options use the MySQL Installer to guide you through the installation proce
    ![MySQL Setup Type](/installation/img/download.png)
    
 3. Double-click the file to launch the MySQL Installer.
-   ![MySQL Setup Type](/installation/img/product1.png)
-   
 5. If Windows asks for permission to make changes to your device, click **Yes**.
 6. Wait for the installer to initialize.
 
@@ -54,7 +52,7 @@ The available options include:
 | Custom | Allows you to select individual MySQL components. |
 
 
-![MySQL Setup Type](/installation/img/win_setup_type.png)
+![MySQL Setup Type](/installation/img/setup_type.png)
 
 **Recommendation:** Select **Developer Default** if you plan to develop applications or work with databases using MySQL Workbench.
 
