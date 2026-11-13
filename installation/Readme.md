@@ -110,6 +110,10 @@ After installation, you will be prompted to configure MySQL Server.
 ![MySQL Setup Type](/installation/img/apply_configuration.png)
 7. Wait until all configuration steps are completed successfully.
 8. Click **Finish**.
+![MySQL Setup Type](/installation/img/complete_configuration.png)
+9. Product configuration
+ ![MySQL Setup Type](/installation/img/product_configuration.png)
+
 
 ## Step 7: Verify the Installation
 
