@@ -72,7 +72,8 @@ Click **Next**.
   ![MySQL Setup Type](/installation/img/installation_in_process.png)
 
 9. Wait until all products show a successful installation status.
-10. Click **Next** to continue.
+    ![MySQL Setup Type](/installation/img/installation_completed.png)
+11. Click **Next** to continue.
 
 ## Step 5: Configure MySQL Server
 
