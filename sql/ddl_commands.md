@@ -3,6 +3,8 @@
 
 DDL is used to create, modify, and delete database structures, such as databases and tables.
 
+![DataBases](/img/ddl_data_definition_languge.jpg)
+
 ## 1\. DDL Commands Summary
 
 | DDL Command | Description | Example |
