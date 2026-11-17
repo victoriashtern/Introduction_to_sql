@@ -19,9 +19,7 @@ DDL is used to create, modify, and delete database structures, such as databases
 
 ---
 
-## 2\. SQL Code Examples
-
-### 1\. CREATE DATABASE
+###  CREATE DATABASE
 
 Creates a new database.
 
@@ -31,11 +29,9 @@ sql
 CREATE DATABASE School;
 ```
 
-### 2\. CREATE TABLE
+### CREATE TABLE
 
 Creates a new table inside the School database.
-
-
 
 ```sql
 CREATE TABLE Students (
@@ -45,51 +41,42 @@ CREATE TABLE Students (
 );
 ```
 
-### 3\. ALTER TABLE
+###  ALTER TABLE
 
 Adds a new column to an existing table.
-
-
 
 ```sql
 ALTER TABLE Students
 ADD Email VARCHAR(100);
 ```
 
-### 4\. DROP DATABASE
+### DROP DATABASE
 
 Deletes the entire School database.
-
-
 
 ```sql
 DROP DATABASE School;
 ```
 
-### 5\. DROP TABLE
+### DROP TABLE
 
 Deletes the Students table.
-
 
 ```sql
 DROP TABLE Students;
 ```
 
-### 6\. TRUNCATE TABLE
+### TRUNCATE TABLE
 
 Removes all records from the Students table but keeps the table structure.
-
-
 
 ```sql
 TRUNCATE TABLE Students;
 ```
 
-### 7\. RENAME TABLE
+### RENAME TABLE
 
 Changes the table name from Students to StudentRecords.
-
-
 
 ```sql
 RENAME TABLE Students TO StudentRecords;
