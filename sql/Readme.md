@@ -19,7 +19,7 @@
 SQL commands are divided into five main categories:
 
 
-![SQL](/img/sql_commands.png)
+![SQL](/img/sql_commands.jpg)
 
 | Category | Full Form | Purpose | Common Commands |
 | --- | --- | --- | --- |
