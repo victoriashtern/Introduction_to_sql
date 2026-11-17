@@ -5,7 +5,9 @@ DML is used to manipulate the actual data (records) stored inside database table
 
 DML commands allow users to insert, retrieve, modify, and delete records in a database.
 
-## 1\. DML Commands Summary
+![DML](/img/dml_data_manipulation_language.jpg)
+
+###  DML Commands Summary
 
 | DML Command | Description | Example |
 | --- | --- | --- |
@@ -13,11 +15,8 @@ DML commands allow users to insert, retrieve, modify, and delete records in a da
 | **UPDATE** | Modifies existing records in a table. | Changes a student's name or age. |
 | **DELETE** | Removes specific records from a table. | Deletes a student from Students. |
 
----
 
-## 2\. SQL Code Examples
-
-### 1\. INSERT
+###  INSERT
 
 Adds new records to an existing table.
 
@@ -42,7 +41,7 @@ VALUES
     (4, 'Sarah', 19);
 ```
 
-### 2\. UPDATE
+###  UPDATE
 
 Modifies existing records in a table.
 
@@ -67,7 +66,7 @@ SET Name = 'John Smith',
 WHERE ID = 1;
 ```
 
-### 3\. DELETE
+###  DELETE
 
 Removes specific records from a table.
 
@@ -89,9 +88,7 @@ DELETE FROM Students
 WHERE Age < 18;
 ```
 
----
-
-## 3\. Important Notes
+###  Important Notes
 
 - DML stands for Data Manipulation Language.
 - DML commands work with the records stored inside database tables.
@@ -102,9 +99,8 @@ WHERE Age < 18;
 - Without a `WHERE` clause, `UPDATE` can modify all records and `DELETE` can remove all records.
 - DML changes can be managed with transactions when the table uses a transactional storage engine such as InnoDB.
 
----
 
-## 4\. DDL vs DML
+###  DDL vs DML
 
 | DDL | DML |
 | --- | --- |
