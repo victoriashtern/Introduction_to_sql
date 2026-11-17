@@ -31,7 +31,6 @@ Unlike scripting languages, SQL queries are self-contained and generally do not 
 | **LIMIT** | Restricts the number of records returned. | Displays the first 5 students. |
 | **AS** | Assigns a temporary name (alias) to a column or table. | Displays Name as Student\_Name. |
 
----
 
 ## 2\. SQL Code Examples
 
@@ -102,18 +101,3 @@ SELECT * FROM Students
 LIMIT 5;
 ```
 
----
-
-## 3\. Important Notes
-
-- DQL stands for Data Query Language.
-- `SELECT` is the primary DQL command.
-- DQL retrieves information without modifying the stored records.
-- `WHERE` filters individual records.
-- `HAVING` filters grouped results.
-- `ORDER BY` sorts query results.
-- `GROUP BY` organizes records into groups.
-- `DISTINCT` removes duplicate results.
-- `LIMIT` restricts the number of returned records.
-
----
