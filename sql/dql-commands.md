@@ -2,7 +2,13 @@
 
 DQL is used to retrieve, filter, sort, and display information stored in database tables.
 
-The main DQL command is `SELECT`, supported by several clauses and operators.
+Data Query Language (DQL) is used to retrieve and query data from a database. Its primary command is SELECT, which allows users to request specific information from database tables and views.
+
+SQL queries can range from simple, single-line statements to complex queries involving multiple tables, joins, and schemas within the same database. Although SQL generally does not support querying across separate databases directly, additional software or network configurations can enable access to multiple data sources.
+
+Unlike scripting languages, SQL queries are self-contained and generally do not rely on variables or outputs from previous steps
+
+![DQL](/img/dql_data_query_language_command.png)
 
 ## 1\. DQL Commands and Clauses Summary
 
