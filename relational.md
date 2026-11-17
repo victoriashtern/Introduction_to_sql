@@ -26,6 +26,8 @@ For example, an online store might organize its information into separate tables
 
 Instead of storing all information in one large table, relational databases separate information into related tables. This approach improves organization and makes data management more efficient.
 
+![DataBases](/img/db_relation.jpg)
+
 ### Key Components of a Relational Database
 
 | Component | Description |
@@ -48,6 +50,10 @@ Relationships are commonly established using:
 
 - **Primary Key (PK):** A column or combination of columns that uniquely identifies each record in a table.
 - **Foreign Key (FK):** A column or combination of columns that references a key in another table, establishing a relationship between the tables.
+![primary_forgen_keys](/img/primary_forgen_keys.jpg)
+  
+
+  ![DataBases](/img/databases.jpg)
 
 ## 2.5 Key Takeaways
 
