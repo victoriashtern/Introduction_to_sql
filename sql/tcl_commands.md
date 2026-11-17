@@ -1,7 +1,3 @@
-Here is a complete, professionally structured Markdown page for Transaction Control Language (TCL) Commands, following the same documentation style as your MySQL Data Types and SQL command references.
-
-Writing
-
 # MySQL Transaction Control Language (TCL) – Complete Reference Guide
 
 Transaction Control Language (TCL) consists of SQL commands used to manage database transactions and control changes made to the database.
@@ -12,28 +8,10 @@ In MySQL, transaction control is particularly important when working with transa
 
 This guide covers the main TCL commands, their syntax, practical examples, and best practices for managing database transactions.
 
-\!MySQL Transaction Control Language
 
----
+![TCL](/img/tcl_transaction_control_language.jpg)
 
-## Table of Contents
-
-1. Introduction to TCL
-2. Understanding Database Transactions
-3. COMMIT – Save Transaction Changes
-4. ROLLBACK – Undo Transaction Changes
-5. SAVEPOINT – Create an Intermediate Checkpoint
-6. ROLLBACK TO SAVEPOINT
-7. RELEASE SAVEPOINT
-8. START TRANSACTION and BEGIN
-9. SET TRANSACTION
-10. Complete Transaction Example
-11. TCL Commands Quick Reference
-12. Best Practices and Recommendations
-
----
-
-## 1\. Introduction to TCL
+###  Introduction to TCL
 
 **Transaction Control Language (TCL)** consists of SQL commands used to manage database transactions and control how changes are applied to the database.
 
@@ -56,9 +34,8 @@ The following commands are commonly used to manage transactions in MySQL:
 | RELEASE SAVEPOINT | Removes a previously created savepoint |
 | SET TRANSACTION | Configures transaction characteristics |
 
----
 
-## 2\. Understanding Database Transactions
+### Understanding Database Transactions
 
 A database transaction is a sequence of one or more SQL operations treated as a single logical unit of work.
 
@@ -88,8 +65,6 @@ Database transactions are commonly described using four fundamental properties k
 
 A typical transaction follows this sequence:
 
-sql
-
 ```sql
 START TRANSACTION;
 
@@ -100,8 +75,6 @@ COMMIT;
 
 If an error occurs, the transaction can instead be cancelled:
 
-sql
-
 ```sql
 START TRANSACTION;
 
@@ -110,9 +83,7 @@ START TRANSACTION;
 ROLLBACK;
 ```
 
----
-
-## 3\. COMMIT – Save Transaction Changes
+### COMMIT – Save Transaction Changes
 
 The `COMMIT` command permanently saves the changes made during the current transaction.
 
@@ -120,7 +91,6 @@ Once a transaction is committed, its changes become part of the database and can
 
 ### Syntax
 
-sql
 
 ```sql
 COMMIT;
@@ -130,7 +100,6 @@ COMMIT;
 
 Consider a bank account table:
 
-sql
 
 ```sql
 CREATE TABLE accounts (
@@ -142,7 +111,6 @@ CREATE TABLE accounts (
 
 Insert two sample accounts:
 
-sql
 
 ```sql
 INSERT INTO accounts VALUES
@@ -151,8 +119,6 @@ INSERT INTO accounts VALUES
 ```
 
 Now transfer money between the accounts:
-
-sql
 
 ```sql
 START TRANSACTION;
@@ -184,9 +150,7 @@ Both changes are committed together.
 - COMMIT releases transaction locks.
 - The changes become visible to other transactions according to the database isolation rules.
 
----
-
-## 4\. ROLLBACK – Undo Transaction Changes
+### ROLLBACK – Undo Transaction Changes
 
 The `ROLLBACK` command cancels the current transaction and reverses changes made since the transaction began or since the most recent savepoint to which it was rolled back.
 
@@ -194,15 +158,11 @@ It is useful when an operation fails or when changes should not be applied.
 
 ### Syntax
 
-sql
-
 ```sql
 ROLLBACK;
 ```
 
 ### Example
-
-sql
 
 ```sql
 START TRANSACTION;
@@ -236,9 +196,7 @@ The account balances return to their original values because the transaction was
 - It cannot undo changes that have already been committed.
 - Its transactional behavior depends on the storage engine and operation being performed.
 
----
-
-## 5\. SAVEPOINT – Create an Intermediate Checkpoint
+### SAVEPOINT – Create an Intermediate Checkpoint
 
 The `SAVEPOINT` command creates a named checkpoint within an active transaction.
 
@@ -248,15 +206,12 @@ This is particularly useful when a transaction contains multiple operations and 
 
 ### Syntax
 
-sql
-
 ```sql
 SAVEPOINT savepoint_name;
 ```
 
 ### Example
 
-sql
 
 ```sql
 START TRANSACTION;
@@ -291,25 +246,17 @@ These checkpoints can be used to selectively reverse operations before committin
 - Savepoints are removed when the transaction is committed or fully rolled back.
 - Creating a savepoint with an existing name replaces the previous savepoint with that name.
 
----
-
-## 6\. ROLLBACK TO SAVEPOINT
+### ROLLBACK TO SAVEPOINT
 
 The `ROLLBACK TO SAVEPOINT` command reverses changes made after a specified savepoint without cancelling the entire transaction.
 
 It allows a transaction to continue after selected operations have been undone.
 
-### Syntax
-
-sql
 
 ```sql
 ROLLBACK TO SAVEPOINT savepoint_name;
 ```
 
-### Example
-
-sql
 
 ```sql
 START TRANSACTION;
@@ -352,25 +299,17 @@ The withdrawal remains, while the deposit is reversed.
 - The specified savepoint remains available after the rollback.
 - You can continue executing SQL statements after rolling back to a savepoint.
 
----
 
-## 7\. RELEASE SAVEPOINT
+### RELEASE SAVEPOINT
 
 The `RELEASE SAVEPOINT` command removes a previously created savepoint from the current transaction.
 
 It does not undo any changes made to the database.
 
-### Syntax
-
-sql
 
 ```sql
 RELEASE SAVEPOINT savepoint_name;
 ```
-
-### Example
-
-sql
 
 ```sql
 START TRANSACTION;
@@ -398,17 +337,12 @@ COMMIT;
 - A released savepoint cannot be used for subsequent rollback operations.
 - Releasing a savepoint does not commit the transaction.
 
----
-
-## 8\. START TRANSACTION and BEGIN
+### START TRANSACTION and BEGIN
 
 The `START TRANSACTION` and `BEGIN` statements are used to initiate a new transaction.
 
 They allow multiple SQL statements to be grouped into a single transactional unit.
 
-### Syntax
-
-sql
 
 ```sql
 START TRANSACTION;
@@ -416,15 +350,10 @@ START TRANSACTION;
 
 Alternatively:
 
-sql
-
 ```sql
 BEGIN;
 ```
 
-### Example
-
-sql
 
 ```sql
 START TRANSACTION;
@@ -447,17 +376,11 @@ COMMIT;
 - By default, MySQL uses autocommit mode, meaning individual statements are committed automatically unless an explicit transaction is started or autocommit is disabled.
 - Starting a new transaction while another transaction is active can implicitly commit the existing transaction.
 
----
-
-## 9\. SET TRANSACTION
+### SET TRANSACTION
 
 The `SET TRANSACTION` statement configures transaction characteristics, such as isolation level and access mode.
 
 It allows you to control how a transaction interacts with other concurrent transactions.
-
-### Syntax
-
-sql
 
 ```sql
 SET TRANSACTION
@@ -474,8 +397,6 @@ Supported isolation levels include:
 | SERIALIZABLE | Provides the strictest standard isolation level by enforcing more restrictive transaction behavior. |
 
 ### Example: Setting the Isolation Level
-
-sql
 
 ```sql
 SET TRANSACTION
