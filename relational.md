@@ -5,6 +5,7 @@ A **relational database** is a database management system that organizes informa
 These tables can be connected through relationships, allowing information to be stored efficiently, reducing unnecessary data duplication, and making it easier to retrieve related information.
 
 Relational databases are widely used in business applications, financial systems, e-commerce platforms, and information management systems.
+![Relation Database](/img/relation_db.jpg)
 
 ### Examples of Relational Database Management Systems (RDBMS)
 
