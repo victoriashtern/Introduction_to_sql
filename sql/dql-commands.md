@@ -10,7 +10,7 @@ Unlike scripting languages, SQL queries are self-contained and generally do not 
 
 ![DQL](/img/dql_data_query_language_command.jpg)
 
-## 1\. DQL Commands and Clauses Summary
+### DQL Commands and Clauses Summary
 
 | Command / Clause | Description | Example / Purpose |
 | --- | --- | --- |
@@ -32,21 +32,17 @@ Unlike scripting languages, SQL queries are self-contained and generally do not 
 | **AS** | Assigns a temporary name (alias) to a column or table. | Displays Name as Student\_Name. |
 
 
-## 2\. SQL Code Examples
+### SQL Code Examples
 
 Assume we have a table named `Students`.
 
 ### SELECT – Retrieve All Records
-
-sql
 
 ```sql
 SELECT * FROM Students;
 ```
 
 ### WHERE – Filter Records
-
-sql
 
 ```sql
 SELECT * FROM Students
@@ -55,8 +51,6 @@ WHERE Age > 18;
 
 ### DISTINCT – Remove Duplicates
 
-sql
-
 ```sql
 SELECT DISTINCT Age
 FROM Students;
@@ -64,16 +58,12 @@ FROM Students;
 
 ### ORDER BY – Sort Records
 
-sql
-
 ```sql
 SELECT * FROM Students
 ORDER BY Name ASC;
 ```
 
 ### GROUP BY – Group Records
-
-sql
 
 ```sql
 SELECT Age, COUNT(*)
@@ -83,8 +73,6 @@ GROUP BY Age;
 
 ### HAVING – Filter Grouped Records
 
-sql
-
 ```sql
 SELECT Age, COUNT(*)
 FROM Students
@@ -93,8 +81,6 @@ HAVING COUNT(*) > 1;
 ```
 
 ### LIMIT – Restrict Results
-
-sql
 
 ```sql
 SELECT * FROM Students
