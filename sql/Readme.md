@@ -23,7 +23,7 @@ SQL commands are divided into five main categories:
 
 | Category | Full Form | Purpose | Common Commands |
 | --- | --- | --- | --- |
-| DDL|  [Data Definition Language Commands](ddl_commands.md)  | CREATE, ALTER, DROP, TRUNCATE |
+| DDL|  [Data Definition Language Commands](ddl_commands.md)  | |CREATE, ALTER, DROP, TRUNCATE |
 | DML | [Data Manipulation Language Commands](dml_commannds.md) | Adds, modifies, and deletes table records. | INSERT, UPDATE, DELETE |
 | DQL| [Data Query Language Commands](dql-commands.md) | Retrieves information from database tables. | SELECT |
 | DCL| [Data Control Language](dcl_commands.md) |  Manages database access and permissions. | GRANT, REVOKE |
