@@ -20,7 +20,7 @@ Databases are also useful for research and exploring topics of interest. They al
 
 - [Installation](/installation/)
 - [Structured Query Language.](/sql/)
-- [Data Types](ddata_types.md)
+- [Data Types](data_types.md)
 
 
 # 2. Overview of Database Types
