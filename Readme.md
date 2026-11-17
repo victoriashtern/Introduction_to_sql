@@ -1,8 +1,6 @@
 
 
-# Introduction to Databases
-
-## 1\. What is a Database?
+# 1. Introduction to Databases
 
 A **database** is a computer application used for storing, managing, and accessing information known as _data_.
 
@@ -20,189 +18,86 @@ Databases are also useful for research and exploring topics of interest. They al
 
 ![DataBases](/img/databases.jpg)
 
-
-
 - [Installation](/installation/)
 - [Structured Query Language.](/sql/)
 - [Data Types](ddata_types.md)
 
 
+# 2. Overview of Database Types
 
-## 2\. Different Types of Databases
+A database is an organized collection of information designed to store, manage, and retrieve data efficiently. Different types of databases use different structures and approaches to organize information.
 
-There are several types of databases, each designed to store and organize information differently.
+| Database Type | Description | Examples |
+|---|---|---|
+|  ![Relational (SQL)](/relational.md)  | Stores data in tables consisting of rows and columns, with relationships between tables. | MySQL, PostgreSQL, SQL Server, Oracle |
+| **NoSQL** | Stores data in flexible formats, such as documents, key-value pairs, and column-based structures. | MongoDB, Redis, Cassandra |
+| **Hierarchical** | Organizes data in a tree structure using parent-child relationships. | IBM IMS |
+| **Network** | Organizes data as interconnected records, allowing multiple relationships between records. | Integrated Data Store (IDS) |
+| **Object-Oriented** | Stores data as objects, similar to those used in object-oriented programming. | ObjectDB, db4o |
+| **Graph** | Represents data using nodes (entities) and edges (relationships). | Neo4j, Amazon Neptune |
+| **Time-Series** | Stores timestamped data to support the analysis of changes and trends over time. | InfluxDB, TimescaleDB |
 
-### 2.1 Relational Databases (SQL)
+## 2.2 Understanding Relational Databases
 
-Store data in tables consisting of rows and columns. Tables are connected through relationships.
+A **relational database** is a database management system that organizes information into tables consisting of rows and columns.
 
-**Examples:** MySQL, PostgreSQL, SQL Server, Oracle.
+These tables can be connected through relationships, allowing information to be stored efficiently, reducing unnecessary data duplication, and making it easier to retrieve related information.
 
-### 2.2 NoSQL Databases
+Relational databases are widely used in business applications, financial systems, e-commerce platforms, and information management systems.
 
-Store data in flexible formats such as documents, key-value pairs, and column-based structures.
+### Examples of Relational Database Management Systems (RDBMS)
 
-**Examples:** MongoDB, Redis, Cassandra.
+- MySQL
+- PostgreSQL
+- Microsoft SQL Server
+- Oracle Database
 
-### 2.3 Hierarchical Databases
+## 2.3 How Are Relational Databases Organized?
 
-Organize data in a tree structure using parent-child relationships.
+A relational database consists of multiple tables, also known as *relations*. Each table stores information about a particular subject or entity.
 
-**Example:** IBM IMS.
+For example, an online store might organize its information into separate tables:
 
-### 2.4 Network Databases
+- **Customers:** Stores customer information.
+- **Products:** Stores product details.
+- **Orders:** Stores customer order information.
+- **Payments:** Stores payment transactions.
 
-Organize data as interconnected records, allowing a record to have multiple relationships.
+Instead of storing all information in one large table, relational databases separate information into related tables. This approach improves organization and makes data management more efficient.
 
-**Example:** Integrated Data Store (IDS).
+### Key Components of a Relational Database
 
-### 2.5 Object-Oriented Databases
+| Component | Description |
+|---|---|
+| **Tables (Relations)** | Structures used to organize and store data. |
+| **Rows (Records)** | Individual entries within a table. Each row represents a record. |
+| **Columns (Fields)** | Define the attributes or properties of the stored information. |
+| **Entities** | Real-world objects or subjects represented in the database, such as customers, products, and orders. |
+| **Relationships** | Connections between tables that allow related information to be linked. |
 
-Store data as objects, similar to object-oriented programming.
+## 2.4 Relationships and Referential Integrity
 
-**Examples:** ObjectDB, db4o.
+Relational databases use relationships to connect information stored in different tables.
 
-### 2.6 Graph Databases
+These relationships help maintain **referential integrity**, which means that references between related records remain valid and consistent.
 
-Represent data using nodes (entities) and edges (relationships).
+For example, an order should reference an existing customer rather than a customer who does not exist in the Customers table.
 
-**Examples:** Neo4j, Amazon Neptune.
+Relationships are commonly established using:
 
-### 2.7 Time-Series Databases
+- **Primary Key (PK):** A column or combination of columns that uniquely identifies each record in a table.
+- **Foreign Key (FK):** A column or combination of columns that references a key in another table, establishing a relationship between the tables.
 
-Store data associated with specific timestamps, making it easier to analyze changes over time.
+## 2.5 Key Takeaways
 
-**Examples:** InfluxDB, TimescaleDB.
+By the end of this section, students should understand that:
 
-### Quick Comparison
+1. Databases come in different types, each designed to organize and manage information differently.
+2. Relational databases organize information into tables containing rows and columns.
+3. Tables represent different entities, such as customers, products, and orders.
+4. Relationships connect tables and allow related information to be retrieved.
+5. Primary keys and foreign keys help establish relationships and maintain data integrity.
+6. SQL is the language commonly used to communicate with relational databases.
 
-| Database Type | Data Organization | Examples |
-| --- | --- | --- |
-| Relational | Tables | MySQL, PostgreSQL |
-| NoSQL | Documents, key-value, columns | MongoDB, Redis |
-| Hierarchical | Tree structure | IBM IMS |
-| Network | Connected records | IDS |
-| Object-Oriented | Objects | ObjectDB |
-| Graph | Nodes and relationships | Neo4j |
-| Time-Series | Timestamped data | InfluxDB |
 
-## 3\. What is a Relational Database?
 
-A **relational database** is a type of database that stores information in tables. Each table contains data organized into rows and columns.
-
-Tables can be connected to each other through relationships. This allows us to organize information efficiently, avoid unnecessary duplication, and retrieve related information easily.
-
-For example, imagine an online store. It needs to store information about:
-
-- Customers
-- Products
-- Orders
-- Payments
-
-Instead of storing everything in one large table, we organize the information into separate tables and connect them using relationships.
-
-### How Are Relational Databases Organized?
-
-A relational database consists of a series of tables, also called **relations**, that refer to data in other tables.
-
-Each table contains:
-
-- **Rows (records):** Represent individual pieces of information.
-- **Columns (fields):** Represent attributes or properties of the information.
-- **Entities:** Represent real-world objects or subjects being stored, such as customers, products, or orders.
-
-Relationships between tables help maintain **referential integrity**, meaning that references between related records remain valid.
-
-## 4\. Why Do I Need to Learn SQL as a Data Analyst?
-
-Most data today is stored in databases.
-
-Data is automatically added to databases from applications and other software systems. Those same applications retrieve information from databases using **Structured Query Language (SQL)**.
-
-**SQL (pronounced "sequel")** is a powerful language used by data analysts to extract and transform data from databases into actionable insights.
-
-As a data analyst, SQL allows you to:
-
-- Access information stored in databases.
-- Retrieve specific data.
-- Combine information from different tables.
-- Filter and organize data.
-- Transform data for analysis.
-- Generate insights that help organizations make decisions.
-
-We will explore these skills in the **Data Analysis with SQL (DASQL)** course later in the program.
-
-In this course, we are going to learn how databases work and develop a foundation in SQL, which is a prerequisite for DASQL.
-
-**Remember: The world runs on SQL databases\!**
-
-## 5\. SQL Skills and Career Opportunities
-
-Learning how to work with SQL databases is useful not only for data analysis but also for many other careers.
-
-These skills are transferable to different roles, including:
-
-- **Database Administrator:** Manages and maintains databases.
-- **Data Miner:** Extracts useful patterns and information from large datasets.
-- **Software Developer:** Builds applications that interact with databases.
-- **SQL Developer:** Creates and manages SQL queries and database structures.
-- **Data Analyst:** Retrieves, transforms, and analyzes data to produce meaningful insights.
-
-## 6\. Key Concepts to Remember
-
-| Concept | Description |
-| --- | --- |
-| Database | A place where information is stored and managed. |
-| Relational Database | A database that organizes information into related tables. |
-| Table (Relation) | A structure used to organize information into rows and columns. |
-| Row (Record) | Represents an individual entry in a table. |
-| Column (Field) | Represents an attribute or property of the data. |
-| Entity | A real-world object or subject represented in a database. |
-| Relationship | A connection between two or more tables. |
-| Referential Integrity | Ensures that relationships between tables remain valid. |
-| DBMS | Software used to create, manage, and maintain databases. |
-| SQL | A language used to communicate with relational databases. |
-
-## 7\. Summary
-
-A database is used to store, manage, and access information.
-
-There are different types of databases, including relational, NoSQL, hierarchical, network, object-oriented, graph, and time-series databases.
-
-A relational database organizes information into separate tables and connects them through relationships.
-
-SQL is the language used to communicate with relational databases. It allows data analysts to retrieve, combine, and transform data to produce actionable insights.
-
-Understanding how databases work is the foundation for learning SQL and developing essential data analysis skills.
-
-## 8\. Popular Relational Database Systems
-
-Some commonly used **Relational Database Management Systems (RDBMS)** include:
-
-### 8.1 MySQL
-
-**MySQL** is a popular open-source relational database management system used in websites and applications to store, manage, and retrieve data.
-
-Official website: [https://www.mysql.com/](<https://www.mysql.com/>)
-
-### 8.2 PostgreSQL
-
-**PostgreSQL** is a powerful open-source relational database management system with advanced features. It is commonly used for applications that require reliable and flexible data management.
-
-Official website: [https://www.postgresql.org/](<https://www.postgresql.org/>)
-
-### 8.3 Microsoft SQL Server
-
-**Microsoft SQL Server** is a relational database management system developed by Microsoft. It is widely used in business and enterprise environments to store and manage data.
-
-Official website: [https://www.microsoft.com/en-us/sql-server](<https://www.microsoft.com/en-us/sql-server>)
-
-### 8.4 Oracle Database
-
-**Oracle Database** is an enterprise relational database management system used by organizations to manage large amounts of data and support large-scale business applications.
-
-Official website: [https://www.oracle.com/database/](<https://www.oracle.com/database/>)
-
----
-
-**Key takeaway:** Relational databases organize information into tables and connect those tables through relationships. SQL allows us to access and analyze this information, making it an essential skill for data analysts.
