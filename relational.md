@@ -53,8 +53,6 @@ Relationships are commonly established using:
 ![primary_forgen_keys](/img/primary_forgen_keys.jpg)
   
 
-  ![DataBases](/img/databases.jpg)
-
 ## 2.5 Key Takeaways
 
 By the end of this section, students should understand that:
