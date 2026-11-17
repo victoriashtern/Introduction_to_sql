@@ -19,7 +19,7 @@
 SQL commands are divided into five main categories:
 
 
-![MySQL Setup Type](/img/sql_commands.png)
+![SQL](/img/sql_commands.png)
 
 | Category | Full Form | Purpose | Common Commands |
 | --- | --- | --- | --- |
