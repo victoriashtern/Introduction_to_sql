@@ -39,6 +39,9 @@ Instead of storing all information in one large table, relational databases sepa
 | **Entities** | Real-world objects or subjects represented in the database, such as customers, products, and orders. |
 | **Relationships** | Connections between tables that allow related information to be linked. |
 
+![DataBases](/img/db_relation_core_component.jpg)
+
+
 ## 2.4 Relationships and Referential Integrity
 
 Relational databases use relationships to connect information stored in different tables.
