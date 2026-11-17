@@ -2,21 +2,8 @@
 # MySQL Data Types – Complete Reference
 
 MySQL data types define what kind of information a table column can store, such as numbers, text, dates, times, binary data, and geographical information.
+![DataBases](/img/mysql_data_types.jpg)
 
-## Table of Contents
-
-1. [Numeric Data Types](#1-numeric-data-types)
-2. [String and Text Data Types](#2-string-and-text-data-types)
-3. [Date and Time Data Types](#3-date-and-time-data-types)
-4. [JSON Data Type](#4-json-data-type)
-5. [Spatial (GIS) Data Types](#5-spatial-gis-data-types)
-6. [Common MySQL Type Aliases](#6-common-mysql-type-aliases)
-7. [Practical Examples](#7-practical-examples-choosing-the-right-data-type)
-8. [Complete CREATE TABLE Example](#8-complete-create-table-example)
-9. [Quick Guide](#9-quick-guide-which-type-should-you-use)
-10. [Recommendations](#10-recommendations)
-
----
 
 ## 1. Numeric Data Types
 
@@ -36,6 +23,7 @@ Numeric data types store integers, decimal numbers, and floating-point values.
 | BIT(n) | Up to 64 bits | N/A | 0 to 2ⁿ - 1 | Bit-value field | BIT(1) | Binary flags |
 | BOOLEAN | 1 byte | Commonly 0 or 1 | N/A | Alias for TINYINT | TRUE / FALSE | True/false values |
 | BOOL | 1 byte | Commonly 0 or 1 | N/A | Alias for TINYINT | TRUE / FALSE | True/false values |
+
 
 ### Numeric Data Type Notes
 
@@ -59,8 +47,6 @@ CREATE TABLE products (
     discount FLOAT
 );
 ```
-
----
 
 ## 2. String and Text Data Types
 
@@ -107,8 +93,6 @@ CREATE TABLE customers (
 );
 ```
 
----
-
 ## 3. Date and Time Data Types
 
 Date and time data types store dates, times, and timestamps.
@@ -149,8 +133,6 @@ CREATE TABLE appointments (
 );
 ```
 
----
-
 ## 4. JSON Data Type
 
 The JSON data type stores validated JSON documents.
@@ -183,8 +165,6 @@ FROM users;
 - JSON fields can be queried using JSON functions and operators.
 - JSON columns cannot be indexed directly in the same way as ordinary columns. Generated columns and multi-valued indexes can be used for indexing appropriate JSON values.
 
----
-
 ## 5. Spatial (GIS) Data Types
 
 Spatial data types store geographical and geometric information.
@@ -211,8 +191,6 @@ CREATE TABLE locations (
 );
 ```
 
----
-
 ## 6. Common MySQL Type Aliases
 
 Some MySQL data types are alternative names for existing types.
@@ -229,8 +207,6 @@ Some MySQL data types are alternative names for existing types.
 | DOUBLE PRECISION | DOUBLE | DOUBLE PRECISION |
 
 Note: REAL behavior can depend on the REAL_AS_FLOAT SQL mode.
-
----
 
 ## 7. Practical Examples: Choosing the Right Data Type
 
@@ -255,7 +231,7 @@ Here are common choices when designing a real-world database.
 | Appointment | DATETIME | 2026-11-15 10:30:00 | Date and time |
 | User preferences | JSON | {"theme":"dark"} | Flexible data |
 
----
+
 
 ## 8. Complete CREATE TABLE Example
 
@@ -296,7 +272,7 @@ CREATE TABLE employees (
 );
 
 ```
----
+
 
 ## 9. Quick Guide: Which Type Should You Use?
 
@@ -322,7 +298,6 @@ CREATE TABLE employees (
 | Predefined single choices | ENUM |
 | Multiple predefined choices | SET |
 
----
 
 ## 10. Recommendations
 
@@ -337,7 +312,6 @@ CREATE TABLE employees (
 - Use UNSIGNED when negative values are not needed.
 - Choose data types based on the expected size and purpose of the data.
 
----
 
 ## Official Documentation
 
@@ -346,8 +320,3 @@ CREATE TABLE employees (
 [MySQL 8.4 – Numeric Data Types](https://dev.mysql.com/doc/refman/8.4/en/numeric-types.html)
 
 [MySQL 8.4 – Date and Time Data Types](https://dev.mysql.com/doc/refman/8.4/en/date-and-time-types.html)
-
----
-
-*This reference covers the main built-in MySQL data types and aliases. Storage sizes and behavior may depend on MySQL version, character set, SQL mode, and configuration.*
-
