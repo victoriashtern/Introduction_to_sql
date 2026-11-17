@@ -29,7 +29,7 @@ A database is an organized collection of information designed to store, manage, 
 
 | Database Type | Description | Examples |
 |---|---|---|
-|  ![Relational (SQL)](/relational.md)  | Stores data in tables consisting of rows and columns, with relationships between tables. | MySQL, PostgreSQL, SQL Server, Oracle |
+| [Relational (SQL)](/relational.md)  | Stores data in tables consisting of rows and columns, with relationships between tables. | MySQL, PostgreSQL, SQL Server, Oracle |
 | **NoSQL** | Stores data in flexible formats, such as documents, key-value pairs, and column-based structures. | MongoDB, Redis, Cassandra |
 | **Hierarchical** | Organizes data in a tree structure using parent-child relationships. | IBM IMS |
 | **Network** | Organizes data as interconnected records, allowing multiple relationships between records. | Integrated Data Store (IDS) |
