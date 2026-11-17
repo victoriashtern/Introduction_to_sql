@@ -8,7 +8,7 @@ SQL queries can range from simple, single-line statements to complex queries inv
 
 Unlike scripting languages, SQL queries are self-contained and generally do not rely on variables or outputs from previous steps
 
-![DQL](/img/dql_data_query_language_command.png)
+![DQL](/img/dql_data_query_language_command.jpg)
 
 ## 1\. DQL Commands and Clauses Summary
 
