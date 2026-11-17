@@ -3,10 +3,7 @@
 
 ## 1\. What is SQL?
 
-**SQL (Structured Query Language)** is a standard language used to communicate with relational database management systems (RDBMS), such as MySQL.
-
-SQL is used to:
-
+**SQL (Structured Query Language)** is a standard language used to communicate with relational database management systems (RDBMS), such as MySQL. It is pronounced either like “sequel” or by saying each letter, as in “ess cue el.” SQL is used to access, manipulate, and retrieve data from objects (Tables. Views, functions etc ) in a database. Databases can have one or more schemas, which provide the organization and structure and contain other objects. SQL is used to:
 - Create and manage databases.
 - Create and manage tables.
 - Insert records into tables.
@@ -16,7 +13,6 @@ SQL is used to:
 - Manage database permissions.
 - Control database transactions.
 
----
 
 ## 2\. Types of SQL Languages
 
