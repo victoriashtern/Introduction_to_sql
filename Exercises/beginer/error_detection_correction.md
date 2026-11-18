@@ -10,8 +10,9 @@ Your tasks:
 4. Rewrite the query correctly.
 5. Explain briefly why the original query was incorrect.
 
-# Database
-## Table 1: Customers
+## Database - List of the table 
+
+### Customers
 
 | customer\_id | customer\_name | city | age |
 | --- | --- | --- | --- |
@@ -24,7 +25,7 @@ Your tasks:
 | 7 | James | Ottawa | 40 |
 | 8 | Anna | Toronto | 31 |
 
-## Table 2: Products
+### Products
 
 | product\_id | product\_name | category | price |
 | --- | --- | --- | --- |
@@ -37,7 +38,7 @@ Your tasks:
 | 107 | Pen | Stationery | 2 |
 | 108 | Monitor | Electronics | 350 |
 
-## Table 3: Orders
+### Orders
 
 | order\_id | customer\_id | order\_date | total\_amount |
 | --- | --- | --- | --- |
@@ -52,7 +53,7 @@ Your tasks:
 | 1009 | 8 | 2025-04-05 | 800 |
 | 1010 | 3 | 2025-04-10 | 500 |
 
-## Table 4: Order\_Items
+### Order\_Items
 
 | item\_id | order\_id | product\_id | quantity |
 | --- | --- | --- | --- |
@@ -69,7 +70,7 @@ Your tasks:
 | 11 | 1010 | 104 | 1 |
 | 12 | 1010 | 108 | 1 |
 
-## Database Relationships
+### Database Relationships
 
 | Parent Table | Primary Key | Child Table | Foreign Key |
 | --- | --- | --- | --- |
@@ -77,143 +78,135 @@ Your tasks:
 | Orders | order\_id | Order\_Items | order\_id |
 | Products | product\_id | Order\_Items | product\_id |
 
-![DataBases](/img/sales_db.jpg)
+![DataBases](/Exercises/img/sales_db.jpg)
 
 
-
-# Is query correct, if not correct it (30 Minutes)
+### Question1: Is query correct, if not correct it 
 
 **Topics:** SELECT, WHERE, ORDER BY, DISTINCT, LIKE, LIMIT
 
-### 1: Display All Customers
+#### Display All Customers
 
 ```sql
 SELECT customer_name, age FROM Orders;
 ```
 
-### 2: Display Customer Names and Cities
+#### Display Customer Names and Cities
 
 
 ```sql
 SELECT customer_name AND city FROM Customers;
 ```
 
-### 3: Find Customers from Toronto
+#### Find Customers from Toronto
 
 ```sql
 SELECT * FROM Customers WHERE city = 'Vancouver';
 ```
 
-### 4: Find Customers Older Than 30
+#### Find Customers Older Than 30
 
 ```sql
 SELECT * FROM Customers WHERE age < 30;
 ```
 
-### 5: Find Products Costing More Than $100
+#### Find Products Costing More Than $100
 
 ```sql
 SELECT product_name, price FROM Products WHERE price = 100;
 ```
 
-### 6: Sort Products by Price
+#### Sort Products by Price
 
 ```sql
 SELECT * FROM Products ORDER BY price ASC;
 ```
 
-### Question 7: Find Unique Cities
+#### Find Unique Cities
 
 **Incorrect Query:**
-
-sql
 
 ```sql
 SELECT city FROM Customers;
 ```
 
-### 8: Find the Five Most Expensive Products
-
+#### Find the Five Most Expensive Products
 
 ```sql
 SELECT * FROM Products ORDER BY price ASC LIMIT 5;
 ```
 
-### 9: Find Customers Whose Names Start with A
+#### Find Customers Whose Names Start with A
 
 ```sql
 SELECT * FROM Customers WHERE customer_name LIKE '%A';
 ```
 
 
-### 10: Find Electronics Products
+#### Find Electronics Products
 
 ```sql
 SELECT * FROM Products WHERE category = 'Furniture';
 ```
 
-# Part B: Intermediate SQL (40 Minutes)
-
 **Topics:** COUNT, SUM, AVG, MIN, MAX, GROUP BY, HAVING, CASE
 
-### 11: Count Total Customers
-
+#### Count Total Customers
 
 ```sql
-SELECT SUM(customer_id)
-FROM Customers;
+SELECT SUM(customer_id) FROM Customers;
 ```
 
-### 12: Calculate Average Customer Age
+####  Calculate Average Customer Age
 
 ```sql
 SELECT SUM(age) FROM Customers;
 ```
 
-### 13: Find Maximum and Minimum Product Prices
+#### Find Maximum and Minimum Product Prices
 
 ```sql
 SELECT MAX(price), AVG(price) FROM Products;
 ```
 
 
-### 14: Calculate Total Revenue
+#### Calculate Total Revenue
 
 ```sql
 SELECT AVG(total_amount) FROM Orders;
 ```
 
-### 15: Count Customers in Each City
+#### Count Customers in Each City
 
 ```sql
 SELECT city, COUNT(customer_id) FROM Customers;
 ```
 
-### 16: Average Product Price by Category
+#### Average Product Price by Category
 
 ```sql
 SELECT category, SUM(price) FROM Products GROUP BY product_id;
 ```
 
-### 17: Categories with Average Price Greater Than $100
+#### Categories with Average Price Greater Than $100
 
 ```sql
 SELECT category, AVG(price) FROM Products WHERE AVG(price) > 100 GROUP BY category;
 ```
 
-### 18: Count Orders for Each Customer
+#### Count Orders for Each Customer
 
 ```sql
 SELECT customer_id, SUM(order_id) FROM Orders GROUP BY order_id;
 ```
 
-### 19: Total Order Amount for Each Customer
+#### Total Order Amount for Each Customer
 
 ```sql
 SELECT customer_id, COUNT(total_amount) FROM Orders GROUP BY customer_id;
 ```
 
-### 20: Classify Products Using CASE
+#### Classify Products Using CASE
 
 ```sql
 SELECT product_name,
