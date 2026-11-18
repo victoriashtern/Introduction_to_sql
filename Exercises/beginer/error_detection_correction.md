@@ -77,6 +77,7 @@ Your tasks:
 | Orders | order\_id | Order\_Items | order\_id |
 | Products | product\_id | Order\_Items | product\_id |
 
+![DataBases](/img/sales_db.jpg)
 
 
 
