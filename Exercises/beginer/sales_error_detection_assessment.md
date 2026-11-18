@@ -1,4 +1,4 @@
-# SQL Error Detection & Correction Assessment 
+## Sales DB- Error Detection & Correction Assessment 
 
 Each question contains an incorrect SQL query.
 
@@ -10,9 +10,9 @@ Your tasks:
 4. Rewrite the query correctly.
 5. Explain briefly why the original query was incorrect.
 
-## Database - List of the table 
+### Database - List of the table 
 
-### Customers
+#### Customers
 
 | customer\_id | customer\_name | city | age |
 | --- | --- | --- | --- |
@@ -25,7 +25,7 @@ Your tasks:
 | 7 | James | Ottawa | 40 |
 | 8 | Anna | Toronto | 31 |
 
-### Products
+#### Products
 
 | product\_id | product\_name | category | price |
 | --- | --- | --- | --- |
@@ -38,7 +38,7 @@ Your tasks:
 | 107 | Pen | Stationery | 2 |
 | 108 | Monitor | Electronics | 350 |
 
-### Orders
+#### Orders
 
 | order\_id | customer\_id | order\_date | total\_amount |
 | --- | --- | --- | --- |
@@ -53,7 +53,7 @@ Your tasks:
 | 1009 | 8 | 2025-04-05 | 800 |
 | 1010 | 3 | 2025-04-10 | 500 |
 
-### Order\_Items
+#### Order\_Items
 
 | item\_id | order\_id | product\_id | quantity |
 | --- | --- | --- | --- |
@@ -81,7 +81,7 @@ Your tasks:
 ![DataBases](/Exercises/img/sales_db.jpg)
 
 
-### Question1: Is query correct, if not correct it 
+### Is query correct, if not correct it 
 
 **Topics:** SELECT, WHERE, ORDER BY, DISTINCT, LIKE, LIMIT
 
@@ -219,5 +219,3 @@ SELECT product_name,
 FROM Products;
 ```
 
-
-You can copy the document into a file named `SQL_Error_Detection_Assessment.md`.
