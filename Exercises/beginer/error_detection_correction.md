@@ -10,8 +10,77 @@ Your tasks:
 4. Rewrite the query correctly.
 5. Explain briefly why the original query was incorrect.
 
+# Database
+## Table 1: Customers
 
-# Part Is query correct, if not correct it (30 Minutes)
+| customer\_id | customer\_name | city | age |
+| --- | --- | --- | --- |
+| 1 | John | Toronto | 25 |
+| 2 | Sarah | Vancouver | 32 |
+| 3 | Mike | Toronto | 28 |
+| 4 | Emma | Calgary | 35 |
+| 5 | David | Montreal | 22 |
+| 6 | Lisa | Vancouver | 29 |
+| 7 | James | Ottawa | 40 |
+| 8 | Anna | Toronto | 31 |
+
+## Table 2: Products
+
+| product\_id | product\_name | category | price |
+| --- | --- | --- | --- |
+| 101 | Laptop | Electronics | 1200 |
+| 102 | Mouse | Electronics | 25 |
+| 103 | Chair | Furniture | 150 |
+| 104 | Desk | Furniture | 300 |
+| 105 | Phone | Electronics | 800 |
+| 106 | Notebook | Stationery | 5 |
+| 107 | Pen | Stationery | 2 |
+| 108 | Monitor | Electronics | 350 |
+
+## Table 3: Orders
+
+| order\_id | customer\_id | order\_date | total\_amount |
+| --- | --- | --- | --- |
+| 1001 | 1 | 2025-01-10 | 1225 |
+| 1002 | 2 | 2025-01-12 | 800 |
+| 1003 | 3 | 2025-02-05 | 150 |
+| 1004 | 1 | 2025-02-15 | 350 |
+| 1005 | 4 | 2025-03-01 | 300 |
+| 1006 | 5 | 2025-03-10 | 25 |
+| 1007 | 6 | 2025-03-15 | 1200 |
+| 1008 | 2 | 2025-04-01 | 350 |
+| 1009 | 8 | 2025-04-05 | 800 |
+| 1010 | 3 | 2025-04-10 | 500 |
+
+## Table 4: Order\_Items
+
+| item\_id | order\_id | product\_id | quantity |
+| --- | --- | --- | --- |
+| 1 | 1001 | 101 | 1 |
+| 2 | 1001 | 102 | 1 |
+| 3 | 1002 | 105 | 1 |
+| 4 | 1003 | 103 | 1 |
+| 5 | 1004 | 108 | 1 |
+| 6 | 1005 | 104 | 1 |
+| 7 | 1006 | 102 | 1 |
+| 8 | 1007 | 101 | 1 |
+| 9 | 1008 | 108 | 1 |
+| 10 | 1009 | 105 | 1 |
+| 11 | 1010 | 104 | 1 |
+| 12 | 1010 | 108 | 1 |
+
+## Database Relationships
+
+| Parent Table | Primary Key | Child Table | Foreign Key |
+| --- | --- | --- | --- |
+| Customers | customer\_id | Orders | customer\_id |
+| Orders | order\_id | Order\_Items | order\_id |
+| Products | product\_id | Order\_Items | product\_id |
+
+
+
+
+# Is query correct, if not correct it (30 Minutes)
 
 **Topics:** SELECT, WHERE, ORDER BY, DISTINCT, LIKE, LIMIT
 
