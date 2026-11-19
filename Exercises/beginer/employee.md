@@ -1,8 +1,3 @@
-
-**Duration:** 3 Hours  
-**Total Marks:** 100  
-**Level:** Intermediate
-
 ## Exam Objectives
 
 Evaluate practical MySQL skills, including:
