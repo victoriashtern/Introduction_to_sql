@@ -17,9 +17,13 @@ Evaluate practical MySQL skills, including:
 - Database creation and management
 - Transactions
 
----
 
 ## Section 1 – SQL Fundamentals (15 Marks)
+![DataBases](/img/erd_emplyee_company.jpg)
+
+
+
+## Section 2 – SQL Fundamentals (15 Marks)
 
 1. Write a query to display all employees whose salary is greater than 5,000.
 2. Write a query to retrieve employees whose names start with the letter 'A'.
@@ -29,7 +33,7 @@ Evaluate practical MySQL skills, including:
 6. Write a query using DISTINCT to display all unique department IDs.
 7. Find the total, minimum, maximum, and average employee salary.
 
-## Section 2 – INSERT, UPDATE and DELETE (20 Marks)
+## Section 3 – INSERT, UPDATE and DELETE (20 Marks)
 
 8. Write an INSERT statement to add a new employee with the following details:
    - Employee ID: 101
@@ -51,7 +55,7 @@ Evaluate practical MySQL skills, including:
 
 15. Write a query to delete employees who do not belong to any department. Consider how foreign-key constraints may affect the operation.
 
-## Section 3 – JOIN Tables (25 Marks)
+## Section 4 – JOIN Tables (25 Marks)
 
 Assume the following tables:
 
@@ -91,7 +95,7 @@ Assume the following tables:
 
 23. Write a query to find employees working in the same department as employee ID 105.
 
-## Section 4 – GROUP BY, HAVING and Aggregate Functions (15 Marks)
+## Section 5 – GROUP BY, HAVING and Aggregate Functions (15 Marks)
 
 24. Find the total number of employees in each department.
 
@@ -105,7 +109,7 @@ Assume the following tables:
 
 29. Explain the difference between WHERE and HAVING with examples.
 
-## Section 5 – Subqueries and Advanced SQL (15 Marks)
+## Section 6 – Subqueries and Advanced SQL (15 Marks)
 
 30. Find employees whose salary is greater than the company's average salary.
 
@@ -119,7 +123,7 @@ Assume the following tables:
 
 35. Explain the difference between a subquery and a JOIN.
 
-## Section 6 – Practical Database Challenges (10 Marks)
+## Section 7 – Practical Database Challenges (10 Marks)
 
 36. Create a database named company_db.
 
@@ -131,31 +135,6 @@ Assume the following tables:
 
 40. Write a transaction that updates an employee's salary and demonstrates COMMIT and ROLLBACK.
 
----
-
-## Suggested 3-Hour Examination Schedule
-
-| Section | Topic | Time |
-|---|---|---:|
-| 1 | SQL Fundamentals | 25 min |
-| 2 | INSERT, UPDATE, DELETE | 30 min |
-| 3 | JOIN Operations | 45 min |
-| 4 | GROUP BY and HAVING | 25 min |
-| 5 | Subqueries | 25 min |
-| 6 | Practical Challenges | 30 min |
-| **Total** | | **180 min** |
-
-## Examination Instructions
-
-- Write executable MySQL queries.
-- Use appropriate aliases for tables and columns.
-- Apply correct JOIN conditions.
-- Avoid unnecessary duplicate records.
-- Pay attention to primary keys and foreign-key constraints.
-- Explain your logic wherever requested.
-- Execute your queries using MySQL Workbench or MySQL Server.
-
----
 
 **End of Examination**
 ```
